@@ -24,6 +24,6 @@ class Waiter
   end
   
   def best_tipper
-    meals
+    meals.tip.sort do 
   end
 end
