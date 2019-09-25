@@ -18,8 +18,8 @@ class Customer
   end
   
   def meals
-    Meal.all.collect do |meal|
-      meal.customer == meal.name
+    Meal.all.self.collect do |meal|
+      meal
     end
   end
   
