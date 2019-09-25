@@ -18,7 +18,7 @@ class Customer
   end
   
   def meals
-    Meal.self.all.collect do |meal|
+    Meal.name.all.collect do |meal|
       meal
     end
   end
