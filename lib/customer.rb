@@ -1,5 +1,5 @@
 class Customer
-  attr_reader :name, :age, :meals
+  attr_reader :name, :age
   
   @@all = []
   
@@ -17,7 +17,7 @@ class Customer
     Meal.new(waiter, self, total, tip=0)
   end
   
-  def meal
+  def meals
     Meal.self.all.collect do |meal|
       meal
     end
