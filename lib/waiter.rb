@@ -27,5 +27,6 @@ class Waiter
     meals.max_by do |meal|
       meal.tip
     end
+    meal
   end
 end
