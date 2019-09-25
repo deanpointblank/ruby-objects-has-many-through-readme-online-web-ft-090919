@@ -22,4 +22,8 @@ class Waiter
       meal.customer == self
     end
   end
+  
+  def best_tipper
+    
+  end
 end
