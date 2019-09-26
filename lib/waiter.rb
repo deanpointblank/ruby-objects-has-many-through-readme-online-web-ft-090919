@@ -29,7 +29,7 @@ class Waiter
     best_tipped_meal = meals.max_by do |meal|
       meal.tip
     end
-    binding.py
+    binding.pry
     best_tipped_meal.customer
   end
 end
