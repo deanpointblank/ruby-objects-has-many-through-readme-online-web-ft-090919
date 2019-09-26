@@ -1,3 +1,5 @@
+require "pry"
+
 class Waiter
   attr_reader :name, :yrs_experience
   
@@ -25,8 +27,9 @@ class Waiter
   
   def best_tipper
     best_tipped_meal = meals.max_by do |meal|
-      meal.total
+      meal.tip
     end
+    binding.py
     best_tipped_meal.customer
   end
 end
